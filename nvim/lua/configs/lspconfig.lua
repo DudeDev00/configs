@@ -8,10 +8,14 @@ local lspconfig = require("lspconfig")
 lspconfig.servers = {
     "lua_ls",
     "clangd",
+    "gdscript",
+    "gdshader_lsp",
 }
 
 -- list of servers configured with default config.
-local default_servers = {}
+local default_servers = {
+    "gdscript",
+}
 
 -- lsps with default config
 for _, lsp in ipairs(default_servers) do
@@ -28,6 +32,16 @@ lspconfig.clangd.setup({
         client.server_capabilities.documentRangeFormattingProvider = false
         on_attach(client, bufnr)
     end,
+    on_init = on_init,
+    capabilities = capabilities,
+})
+
+lspconfig.gdshader_lsp.setup({
+    cmd = { "/bin/gdshader-lsp" }, -- Replace with the path to the server executable
+    filetypes = { "gdshader" },
+    root_dir = require("lspconfig/util").root_pattern(".godot"),
+
+    on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
 })

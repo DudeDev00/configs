@@ -1,8 +1,9 @@
 local options = {
     formatters_by_ft = {
-        lua = { "stylua" },
+        gdscript = { "gdscript-formatter" },
         c = { "clang-format" },
         cpp = { "clang-format" },
+        lua = { "stylua" },
     },
 
     formatters = {

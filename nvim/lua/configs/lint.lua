@@ -1,6 +1,7 @@
 local lint = require("lint")
 
 lint.linters_by_ft = {
+    gdscript = { "gdlint" },
     lua = { "luacheck" },
 }
 
