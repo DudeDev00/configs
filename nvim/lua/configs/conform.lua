@@ -19,6 +19,12 @@ local options = {
                         PackConstructorInitializers: Never}",
             },
         },
+        -- GDscript
+        ["gdscript-formatter"] = {
+            command = "gdscript-formatter",
+            args = { "$FILENAME" },
+            stdin = false,
+        },
     },
 
     format_on_save = {
