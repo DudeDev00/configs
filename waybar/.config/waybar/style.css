@@ -4,7 +4,7 @@
     border: none;
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: bold;
     font-style: italic;
 
@@ -27,26 +27,26 @@ window#waybar {
     margin-right: 20;
     margin-left: 10;
 
-    border: 1px solid @overlay0;
-    border-radius: 10px 0px 10px 0px;
+    /* border: 1px solid @overlay0; */
+    /* border-radius: 10px 0px 10px 0px; */
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
     color: @text;
-    border-radius: 10px 0px 10px 0px;
+    /* border-radius: 10px 0px 10px 0px; */
 }
 
 #workspaces button.active {
     background: @overlay0;
-    border: 2px solid @sapphire;
+    /* border: 2px solid @sapphire; */
 }
 
 #clock {
     /* background-color: #64727D; */
     padding: 0px 10px;
-    border: 1px solid @yellow;
+    /* border: 1px solid @yellow; */
     margin-right: 10;
     margin-left: 10;
 
@@ -55,16 +55,16 @@ window#waybar {
 
 #tray {
     padding: 0px 10px;
-    border: 1px solid @blue;
+    /* border: 1px solid @blue; */
 
     color: @blue;
 
-    font-size: 12;
+    /* font-size: 12; */
 }
 
 #pulseaudio {
     padding: 0px 10px;
-    border: 1px solid @green;
+    /* border: 1px solid @green; */
     margin-right: 5;
     margin-left: 5;
 
@@ -73,7 +73,7 @@ window#waybar {
 
 #custom-power {
     padding: 0px 10px;
-    border: 1.2px solid @red;
+    /* border: 1.2px solid @red; */
     margin-right: 5;
     margin-left: 5;
 
@@ -84,7 +84,7 @@ window#waybar {
 
 #cpu, #memory {
     padding: 0px 5px;
-    font-size: 12;
+    /* font-size: 12; */
     font-style: italic;
 }
 
