@@ -19,8 +19,8 @@
         // "network",
         "clock",
         "pulseaudio",
-        "tray",
-        "custom/power"
+        "tray"
+        // "custom/power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
